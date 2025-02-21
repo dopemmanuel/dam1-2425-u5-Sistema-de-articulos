@@ -1,13 +1,16 @@
-# Ejercicio 6: Sistema de Gestión de Vehículos
+# Ejercicio 6: Sistema de Inventario de Tienda
 
-Crea una jerarquía de clases para modelar un sistema de vehículos:
+Crea una clase `Producto` con propiedades como `nombre`, `precio`, `stock` y un método `aplicarDescuento(Double)`.
 
-1. Clase `Vehiculo` con atributos como `marca`, `modelo` y `año`.
-2. Subclases `Auto`, `Moto` y `Camion`, con atributos adicionales como `capacidadPasajeros`, `cilindrada`, `capacidadCarga`, respectivamente.
+Luego, diseña una clase `Inventario` que maneje una lista de productos con métodos para:
 
-Añade métodos como `acelerar()`, `frenar()` y `mostrarInformacion()`.
+- Agregar productos.
+- Buscar productos por nombre.
+- Mostrar productos con stock bajo.
+- Calcular el valor total del inventario.
 
-## Objetivos:
-- Practicar la especialización de clases.
-- Aplicar herencia y sobreescritura de métodos.
-- Familiarizarse con objetos de diferentes categorías.
+## **Objetivos**:
+
+- Practicar la manipulación de listas de objetos.
+- Implementar búsqueda y filtrado en colecciones.
+- Manejar correctamente los descuentos y el cálculo de stock.

@@ -1,36 +1,23 @@
 package com.dam1.eju5.src
 
 
-import com.dam1.eju5.src.clases.Auto
-import com.dam1.eju5.src.clases.Camion
-import com.dam1.eju5.src.clases.Moto
+import com.dam1.eju5.src.clases.Inventario
+
 /**
-Ejercicio 6: Sistema de Gestión de Vehículos
-Crea una jerarquía de clases para modelar un sistema de vehículos:
+Ejercicio 6: Sistema de Inventario de Tienda
+Crea una clase Producto con propiedades como nombre, precio, stock y un método aplicarDescuento(Double).
 
-Clase Vehiculo con atributos como marca, modelo y año.
+Luego, diseña una clase Inventario que maneje una lista de productos con métodos para:
 
-Subclases Auto, Moto y Camion, con atributos adicionales como capacidadPasajeros, cilindrada, capacidadCarga, respectivamente.
-Añade métodos como acelerar(), frenar() y mostrarInformacion().
-
+Agregar productos.
+Buscar productos por nombre.
+Mostrar productos con stock bajo.
+Calcular el valor total del inventario.
 Objetivos:
-Practicar la especialización de clases.
-Aplicar herencia y sobreescritura de métodos.
-Familiarizarse con objetos de diferentes categorías.
+Practicar la manipulación de listas de objetos.
+Implementar búsqueda y filtrado en colecciones.
+Manejar correctamente los descuentos y el cálculo de stock.
  */
 
 fun main() {
-    val auto = Auto("Toyota", "Corolla", 2022, 5)
-    val moto = Moto("Yamaha", "MT-07", 2021, 689)
-    val camion = Camion("Volvo", "FH16", 2020, 25000)
-
-    val vehiculos = listOf(auto, moto, camion)
-    println("------".repeat(12))
-
-    for (vehiculo in vehiculos) {
-        println(vehiculo.mostrarInformacion())
-        vehiculo.acelerar()
-        vehiculo.frenar()
-        println("------".repeat(12))
-    }
 }
